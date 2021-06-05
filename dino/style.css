@@ -1,0 +1,64 @@
+.game {
+    width: 1000px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7ac6f50c-b319-44fe-a812-ce075250a19d/dd9gsf2-9f52b298-3042-4901-9986-20083261d5ee.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvN2FjNmY1MGMtYjMxOS00NGZlLWE4MTItY2UwNzUyNTBhMTlkXC9kZDlnc2YyLTlmNTJiMjk4LTMwNDItNDkwMS05OTg2LTIwMDgzMjYxZDVlZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.j_N15AGrttwldkR8aHyVbP13aJqojFfrWchdeLivLsc);
+    background-size: 50px 50px;
+    position: relative;
+    top: 160px;
+    ;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    25% {
+        top: 120px;
+    }
+
+    50% {
+        top: 90px;
+    }
+    
+    75% {
+        top: 120px
+    }
+
+    100% {
+        top: 150px
+    }
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left: 9 60px;
+
+    background-image: url(./cactus.png);
+    background-size: contain;
+    animation: block 0.8s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 960px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}

@@ -1,0 +1,62 @@
+:root{
+    --black: black;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    color: black;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    border-color: black;
+    font-size: 18px;
+    transition: 200ms transfrom;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
